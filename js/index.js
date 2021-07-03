@@ -22,6 +22,7 @@ initialObst = [{x:5,y:5},{x:6,y:5},{x:5,y:6},{x:15,y:12},{x:15,y:13},{x:15,y:14}
 obst = [{x:5,y:5},{x:6,y:5},{x:5,y:6},{x:15,y:12},{x:15,y:13},{x:15,y:14},{x:15,y:15},{x:14,y:15}];
 food = {x:6,y:7};
 
+alert('press any key to play');
 
 //Game functions
 
