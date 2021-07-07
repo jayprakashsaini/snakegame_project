@@ -168,6 +168,7 @@ function gameEngine(){
                 obst = initialObst;
                 // gameOversound.pause();
                 snakeArr=[{x:13,y:13},{x:13,y:14}];
+                speed=6;
                 score=0;
             }
         }
