@@ -4,7 +4,7 @@ const gameOversound = new Audio('snake_danger.mp3');
 const Eat = new Audio('food.mp3');
 const gameOver = new Audio('gameover.mp3');
 let hiscore = 0;
-let speed =9;
+let speed =6;
 let lastPainttime= 0;
 let score = 0;
 let snakeArr = [
@@ -77,6 +77,7 @@ function gameEngine(){
         // gameOversound.pause();
         snakeArr=[{x:13,y:13},{x:13,y:14}];
         score=0;
+        speed=6;
         if(score===0){
             obst = initialObst;
 
@@ -104,7 +105,7 @@ function gameEngine(){
 
 
 
-            if(score===15){
+            if(score===10){
                 food={x:3,y:3};
                 alert('Congratulations! you have completed level 1 \nPress Ok to play level 2 ');
                 obst=[{x:0,y:0}];
@@ -116,11 +117,12 @@ function gameEngine(){
                 }
                 inputDir={x:0,y:0};
                 snakeArr=[{x:13,y:13},{x:13,y:14}];
+                speed++;
             }
 
     
             //Code of Level 2 starts here
-            if(score==25){
+            if(score==20){
                 food={x:3,y:3};
                 alert('Congratulations! you have completed level 2 \nPress Ok to play level 3');
                 obst=[{x:0,y:0}];
@@ -145,6 +147,7 @@ function gameEngine(){
             
             inputDir={x:0,y:0};
             snakeArr=[{x:13,y:13},{x:13,y:14}];
+            speed++;
             
         }
         if(score>5){
@@ -205,7 +208,7 @@ function gameEngine(){
         
     });
     // Display the food
-    if(score!=14 && score!=24){
+    if(score!=9 && score!=19){
 
 
 
